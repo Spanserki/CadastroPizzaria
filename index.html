@@ -9,6 +9,85 @@
 <body>
     <h1>Crie sua conta na pizzaria Guilherme</h1>
 
-    
+    <form action="">
+        <fieldset>
+            <legend>conta</legend>
+            <div>
+                <label>Email:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Senha:</label>
+                <input type="password">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Cliente</legend>
+            <div>
+                <label>Nome</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Telefone</label>
+                <input type="tel">
+            </div>
+            <div>
+                <label>Sexo</label>
+                <input type="radio">
+                <label>Masculino</label>
+                <input type="radio">
+                <label>Feminino</label>
+            </div>
+            <div>
+                <label>Data de nascimento</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Foto do perfil</label>
+                <input type="file">
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Enedreço</legend>
+            <div>
+                <label>Rua</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Numero</label>
+                <input type="number">
+            </div>
+            <div>
+                <label>Complemento</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Cidade</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Estado</label>
+                <select name="" id="">
+                    <option value="PR">Cascavel</option>
+                    <option value="PR">Toledo</option>
+                    <option value="PR">Londrina</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Descrição</legend>
+            <div>
+                <textarea placeholder="Como encontrou a pizzaria ?" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label>Deseja receber Email com ofertas ?</label>
+                <input type="checkbox">
+            </div>
+        </fieldset>
+        <input type="submit" value="Finalizar cadastro">
+    </form>
 </body>
 </html>

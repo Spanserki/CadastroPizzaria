@@ -14,11 +14,11 @@
             <legend>conta</legend>
             <div>
                 <label>Email:</label>
-                <input type="text">
+                <input type="email" maxlength="150">
             </div>
             <div>
                 <label>Senha:</label>
-                <input type="password">
+                <input type="password" minlength="5" maxlength="15">
             </div>
         </fieldset>
 
@@ -26,7 +26,7 @@
             <legend>Cliente</legend>
             <div>
                 <label>Nome</label>
-                <input type="text">
+                <input type="text" maxlength="50">
             </div>
             <div>
                 <label>Telefone</label>
@@ -34,9 +34,9 @@
             </div>
             <div>
                 <label>Sexo</label>
-                <input type="radio">
+                <input type="radio" name="radio" value="1" checked>
                 <label>Masculino</label>
-                <input type="radio">
+                <input type="radio" name="radio" value="2">
                 <label>Feminino</label>
             </div>
             <div>
@@ -45,7 +45,7 @@
             </div>
             <div>
                 <label>Foto do perfil</label>
-                <input type="file">
+                <input type="file" accept="image/*">
             </div>
         </fieldset>
         
@@ -53,15 +53,15 @@
             <legend>Enedreço</legend>
             <div>
                 <label>Rua</label>
-                <input type="text">
+                <input type="text" maxlength="20">
             </div>
             <div>
                 <label>Numero</label>
-                <input type="number">
+                <input placeholder="(99)99999-9999" type="number" minlength="1" maxlength="9999">
             </div>
             <div>
                 <label>Complemento</label>
-                <input type="text">
+                <input type="text" maxlength="15">
             </div>
             <div>
                 <label>Cidade</label>
@@ -69,10 +69,10 @@
             </div>
             <div>
                 <label>Estado</label>
-                <select name="" id="">
-                    <option value="PR">Cascavel</option>
-                    <option value="PR">Toledo</option>
-                    <option value="PR">Londrina</option>
+                <select>
+                    <option value="CV">Cascavel</option>
+                    <option value="TD">Toledo</option>
+                    <option value="LD">Londrina</option>
                 </select>
             </div>
         </fieldset>
@@ -80,7 +80,7 @@
         <fieldset>
             <legend>Descrição</legend>
             <div>
-                <textarea placeholder="Como encontrou a pizzaria ?" id="" cols="30" rows="10"></textarea>
+                <textarea placeholder="Como encontrou a pizzaria ?" cols="30" rows="10"></textarea>
             </div>
             <div>
                 <label>Deseja receber Email com ofertas ?</label>
